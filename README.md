@@ -4,9 +4,11 @@ Please follow the below instructions and submit before August 22, 2021, 11:59pm
 
 1. This is a boilder plate for TailwindCSS.
 
-2.Fork it and install it in your local machine and complete the following tasks
+2. Fork it and install it in your local machine and complete the following tasks
 
-## TASKS:
+3. After completing, please notify us to move further!
+
+## TASKS
 
 1. EASY: Create a routing system for pages: Homepage (/), Account Page (/account), Pincode Check Page (/pincode), Product Page (/product/{product_id}) [Nested routing and this should appear in the page]
 
