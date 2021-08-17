@@ -1,6 +1,10 @@
 import React from "react";
 import Nav from "./Components/Navbar";
 import Products from "./Pages/ProductPage/index";
+import Account from "./Pages/AccountPage";
+import Categories from "./Pages/CateogryPage";
+import ProductDetails from "./Pages/ProductPage/ProductDetails"
+import PincodePage from "./Pages/Pincode"; 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 const App = () => {
   return (
@@ -9,7 +13,11 @@ const App = () => {
         <Nav />
         <main>
           <Switch>
+          <Route path="/categories" exact component={Categories} />
           <Route path="/product" exact component={Products} />
+          <Route path="/product/:id" component = {ProductDetails}/>
+          <Route path="/account" exact component={Account}/>
+          <Route path="/pincode" exact component={PincodePage}/>
           <Route path="/" component={Home} />
           </Switch>
         </main>

@@ -12,13 +12,16 @@ const Nav = () => {
         <a href="/" class="text-gray-500 hover:text-gray-900">
           Home
         </a>
-        <a href="#" class="text-gray-500 hover:text-gray-900">
+        <a href="/categories" class="text-gray-500 hover:text-gray-900">
           Categories
         </a>
         <a href="/product" class="text-gray-500 hover:text-gray-900">
           Products
         </a>
-        <a href="#" class="text-gray-500 hover:text-gray-900">
+        <a href="/pincode" class="text-gray-500 hover:text-gray-900">
+          Pincode
+        </a>
+        <a href="/account" class="text-gray-500 hover:text-gray-900">
           Account
         </a>
       </div>
