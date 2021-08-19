@@ -21,8 +21,8 @@ class PincodePage extends React.Component {
     const form = document.forms.locationFromPin;
     const pincode = form.Pincode.value;
     //Pincode must be of length 6
-    if (pincode.length != 6) {
-      block.push("Invalid code");
+    if (pincode.length !== 6) {
+      block.push("Invalid Input");
       this.setState({ address: block });
       return;
     }
@@ -41,7 +41,7 @@ class PincodePage extends React.Component {
       <Location blockName={block} />
     ));
     return (
-      <div class="flex justify-around items-center h-screen w-full">
+      <div class="flex justify-around items-center mt-20 h-full w-full">
         <div class="shadow-2xl p-10 rounded-lg">
           <form name="locationFromPin" onSubmit={this.getLocation}>
           <div  class="flex flex-col mb-4">

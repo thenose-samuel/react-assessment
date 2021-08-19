@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+
 import { Link } from "react-router-dom";
 //Static list of possible products
 const products = [
@@ -11,15 +11,19 @@ const Product = () => {
   return (
     <div>
       <main>
-        <div class="place-content-center" className="Main content">
-          <span class="mx-10 my-10 text-gray-500">This is product!</span>
-        </div>
-        <div>
-          {products.map((product) => (
-            <p>
-              <Link to={`product/${product.id}`}>{product.name}</Link>
-            </p>
-          ))}
+        <div class="flex justify-around items-center mt-20 h-full w-full">
+          <div class="flex-col items-center">
+            <span class="uppercase text-bold text-2xl text-gray-500">
+              Here is a list of a few products:
+            </span>
+          <div class="space-y-8 mt-5 uppercase text-blue-600">
+            {products.map((product) => (
+              <p>
+                <Link to={`product/${product.id}`}>{product.name}</Link>
+              </p>
+            ))}
+          </div>
+          </div>
         </div>
       </main>
     </div>
